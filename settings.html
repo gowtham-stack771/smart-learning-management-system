@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | learn Bridge</title>
+
+    <link rel="stylesheet" href="../css file/settings.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- ================= Sidebar ================= -->
+
+    <aside class="sidebar">
+
+       <div class="logo">
+
+🎓 Learn Bridge
+
+</div>
+
+        <ul class="menu">
+
+           <a href="dashboard.html">
+<i class="fa-solid fa-house"></i> Dashboard
+</a>
+
+<a href="course.html">
+<i class="fa-solid fa-book"></i> My Courses
+</a>
+
+<a href="progress.html" class="active">
+<i class="fa-solid fa-chart-line"></i> Progress
+</a>
+
+<a href="assignment.html">
+<i class="fa-solid fa-file-lines"></i> Assignments
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user"></i> Profile
+</a>
+
+<a href="settings.html" class="active">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= Main ================= -->
+
+    <main class="main-content">
+
+        <!-- Header -->
+
+        <header class="header">
+
+            <h1>Settings</h1>
+
+            <div class="header-right">
+
+                <button id="themeToggle" class="theme-btn">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+                <div class="profile">
+
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPAjuBGz-R_UemJ1H1Rilqdb40PRilpWiB7Q43jRK2w&s" alt="Profile">
+
+                    <div>
+                        <h3>Student</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Row 1 -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-user"></i>
+                    Personal Information
+                </h2>
+
+                <input type="text" placeholder="Full Name">
+
+                <input type="email" placeholder="Email Address">
+
+                <input type="tel" placeholder="Phone Number">
+
+                <button>Save Profile</button>
+
+            </div>
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-lock"></i>
+                    Password
+                </h2>
+
+                <input type="password" placeholder="Current Password">
+
+                <input type="password" placeholder="New Password">
+
+                <input type="password" placeholder="Confirm Password">
+
+                <button>Change Password</button>
+
+            </div>
+
+        </div>
+
+        <!-- Row 2 -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-palette"></i>
+                    Appearance
+                </h2>
+
+                <label>
+                    <input type="checkbox" id="darkMode">
+                    Enable Dark Mode
+                </label>
+
+                <br><br>
+
+                <label>Theme Color</label>
+
+                <select>
+
+                    <option>Blue</option>
+
+                    <option>Green</option>
+
+                    <option>Purple</option>
+
+                </select>
+
+            </div>
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-bell"></i>
+                    Notifications
+                </h2>
+
+                <label><input type="checkbox" checked> Assignment Reminder</label><br>
+
+                <label><input type="checkbox" checked> Quiz Reminder</label><br>
+
+                <label><input type="checkbox"> Email Notification</label><br>
+
+                <label><input type="checkbox"> SMS Notification</label>
+
+            </div>
+
+        </div>
+
+        <!-- Row 3 -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-language"></i>
+                    Language
+                </h2>
+
+                <select>
+
+                    <option>English</option>
+
+                    <option>tamil</option>
+
+                    <option>Hindi</option>
+
+                </select>
+
+            </div>
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-hard-drive"></i>
+                    Storage
+                </h2>
+
+                <p>2.8 GB / 5 GB Used</p>
+
+                <progress value="56" max="100"></progress>
+
+                <br><br>
+
+                <button>Clear Cache</button>
+
+            </div>
+
+        </div>
+
+        <!-- Row 4 -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h2>
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    Logout
+                </h2>
+                <a href="login.html">
+                <button class="logout">
+                    Logout
+                </button>
+                </a>
+
+            </div>
+
+            <div class="card danger">
+
+                <h2>
+                    <i class="fa-solid fa-trash"></i>
+                    Delete Account
+                </h2>
+
+                <p>This action cannot be undone.</p>
+
+                <br>
+                <a href="login.html">
+                <button class="delete">
+                    Delete Account
+                </button>
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+
+</div>
+
+<script src="../java script/dashboard.js"></script>
+
+</body>
+</html>

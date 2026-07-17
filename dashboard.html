@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | Learn Bridge</title>
+
+<link rel="stylesheet" href="../css file/dashboard.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- =========================
+        SIDEBAR
+========================= -->
+
+<aside class="sidebar">
+
+<h2>
+<i class="fa-solid fa-graduation-cap"></i>
+Learn Bridge
+</h2>
+
+<a href="index.html" class="active">
+<i class="fa-solid fa-house"></i>
+Dashboard
+</a>
+
+<a href="course.html">
+<i class="fa-solid fa-book"></i>
+My Courses
+</a>
+
+<a href="progress.html">
+<i class="fa-solid fa-chart-line"></i>
+Progress
+</a>
+
+<a href="assignment.html">
+<i class="fa-solid fa-file-lines"></i>
+Assignments
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user"></i>
+Profile
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+
+<a href="login.html">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</a>
+
+</aside>
+
+
+<!-- =========================
+        MAIN CONTENT
+========================= -->
+
+<div class="main">
+
+<!-- =========================
+        TOP NAVBAR
+========================= -->
+
+<div class="topbar">
+
+<div class="search">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+placeholder="Search Courses...">
+
+</div>
+
+<div class="top-icons">
+
+<button id="themeToggle">🌙</button>
+
+<i class="fa-regular fa-bell"></i>
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOPAjuBGz-R_UemJ1H1Rilqdb40PRilpWiB7Q43jRK2w&s" alt="Profile">
+
+</div>
+
+</div>
+<!-- =========================
+        WELCOME BANNER
+========================= -->
+
+<section class="welcome">
+
+<div class="welcome-text">
+
+<h1>Welcome Back, Gowtham 👋</h1>
+
+<p>
+Continue your learning journey and achieve your goals with Learn Bridge.
+</p>
+
+<a href="course.html" class="btn">
+Continue Learning
+</a>
+
+</div>
+
+<div class="welcome-image">
+
+<img src="images/dashboard.png" alt="Dashboard">
+
+</div>
+
+</section>
+
+
+<!-- =========================
+        STATISTICS
+========================= -->
+
+<section class="stats">
+
+<div class="card">
+
+<i class="fa-solid fa-book-open"></i>
+
+<h2>12</h2>
+
+<p>Enrolled Courses</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-award"></i>
+
+<h2>5</h2>
+
+<p>Certificates</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h2>120 hrs</h2>
+
+<p>Learning Time</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-chart-line"></i>
+
+<h2>85%</h2>
+
+<p>Overall Progress</p>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+        CONTINUE LEARNING
+========================= -->
+
+<section class="learning">
+
+<h2>Continue Learning</h2>
+
+<div class="course-grid">
+
+<div class="course-card">
+
+<h3>HTML & CSS Masterclass</h3>
+
+<div class="progress-bar">
+
+<div class="progress html">
+75%
+</div>
+
+</div>
+
+<button>Resume</button>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>JavaScript Essentials</h3>
+
+<div class="progress-bar">
+
+<div class="progress js">
+50%
+</div>
+
+</div>
+
+<button>Resume</button>
+
+</div>
+
+
+<div class="course-card">
+
+<h3>Python Programming</h3>
+
+<div class="progress-bar">
+
+<div class="progress python">
+90%
+</div>
+
+</div>
+
+<button>Resume</button>
+
+</div>
+
+</section>
+<!-- =========================
+        RECENT ACTIVITY
+========================= -->
+
+<section class="dashboard-grid">
+
+<div class="activity">
+
+<h2>Recent Activity</h2>
+
+<div class="activity-item">
+<i class="fa-solid fa-circle-check"></i>
+<div>
+<h4>Completed HTML Quiz</h4>
+<p>Today • Score: 95%</p>
+</div>
+</div>
+
+<div class="activity-item">
+<i class="fa-solid fa-book"></i>
+<div>
+<h4>Enrolled in CSS Masterclass</h4>
+<p>Yesterday</p>
+</div>
+</div>
+
+<div class="activity-item">
+<i class="fa-solid fa-award"></i>
+<div>
+<h4>Certificate Earned</h4>
+<p>HTML Fundamentals</p>
+</div>
+</div>
+
+<div class="activity-item">
+<i class="fa-solid fa-play"></i>
+<div>
+<h4>Watched JavaScript Lesson</h4>
+<p>2 Hours Ago</p>
+</div>
+</div>
+
+</div>
+
+
+<!-- =========================
+        ASSIGNMENTS
+========================= -->
+
+<div class="assignments">
+
+<h2>Upcoming Assignments</h2>
+
+<div class="assignment-card">
+
+<h3>HTML Project</h3>
+
+<p>Create a Portfolio Website.</p>
+
+<span>Due: Tomorrow</span>
+
+</div>
+
+<div class="assignment-card">
+
+<h3>CSS Quiz</h3>
+
+<p>20 Multiple Choice Questions</p>
+
+<span>Due: Friday</span>
+
+</div>
+
+<div class="assignment-card">
+
+<h3>JavaScript Assignment</h3>
+
+<p>Build a Calculator Application.</p>
+
+<span>Due: Monday</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+        CERTIFICATES
+========================= -->
+
+<section class="certificate">
+
+<h2>Latest Certificates</h2>
+
+<div class="certificate-grid">
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>HTML Fundamentals</h3>
+
+<p>Completed Successfully</p>
+
+<button>Download</button>
+
+</div>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-medal"></i>
+
+<h3>CSS Basics</h3>
+
+<p>Completed Successfully</p>
+
+<button>Download</button>
+
+</div>
+
+<div class="certificate-card">
+
+<i class="fa-solid fa-trophy"></i>
+
+<h3>JavaScript Essentials</h3>
+
+<p>In Progress</p>
+
+<button disabled>Locked</button>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+        LEARNING PROGRESS
+========================= -->
+
+<section class="progress-table">
+
+<h2>Learning Progress</h2>
+
+<table>
+
+<tr>
+
+<th>Course</th>
+
+<th>Progress</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>HTML & CSS</td>
+
+<td>75%</td>
+
+<td><span class="completed">Learning</span></td>
+
+</tr>
+
+<tr>
+
+<td>JavaScript</td>
+
+<td>50%</td>
+
+<td><span class="pending">In Progress</span></td>
+
+</tr>
+
+<tr>
+
+<td>Python</td>
+
+<td>90%</td>
+
+<td><span class="completed">Almost Done</span></td>
+
+</tr>
+
+<tr>
+
+<td>React JS</td>
+
+<td>20%</td>
+
+<td><span class="pending">Started</span></td>
+
+</tr>
+
+</table>
+
+</section>
+
+</div>
+
+</div>
+<script src="../java script/dashboard.js"></script>
+
+</body>
+
+</html>

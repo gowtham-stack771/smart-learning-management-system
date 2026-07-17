@@ -1,0 +1,344 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+/* Container */
+
+.container{
+    display:flex;
+}
+
+/* ==========================
+   SIDEBAR
+========================== */
+
+
+.sidebar{
+
+    width:260px;
+    background:#111827;
+    color:white;
+    padding:25px;
+    position:fixed;
+    height:100vh;
+
+}
+
+
+.logo{
+
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:45px;
+
+}
+
+
+
+.sidebar ul{
+
+    list-style:none;
+
+}
+
+
+
+.sidebar li{
+
+    margin:15px 0;
+
+}
+
+
+
+.sidebar a{
+
+    text-decoration:none;
+    color:#cbd5e1;
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:14px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.sidebar a:hover,
+.sidebar .active a{
+
+    background:#2563eb;
+    color:white;
+
+}
+
+/* ================= Main ================= */
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:30px;
+}
+
+/* ================= Header ================= */
+
+.header{
+    background:white;
+    padding:20px 30px;
+    border-radius:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    margin-bottom:30px;
+}
+
+.header h1{
+    font-size:34px;
+    color:#2563eb;
+}
+
+.header-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+/* Theme Button */
+
+.theme-btn{
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#111827;
+    color:#FFD54F;
+    cursor:pointer;
+    font-size:20px;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:scale(1.08);
+}
+
+/* Profile */
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.profile img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:3px solid #2563eb;
+    object-fit:cover;
+}
+
+.profile h3{
+    font-size:18px;
+}
+
+.profile p{
+    color:gray;
+    font-size:14px;
+}
+
+/* ================= Cards ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+    gap:25px;
+    margin-bottom:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#2563eb;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.card input,
+.card select{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.card input:focus,
+.card select:focus{
+    border-color:#2563eb;
+}
+
+.card label{
+    display:block;
+    margin-bottom:12px;
+}
+
+.card input[type="checkbox"]{
+    width:auto;
+    margin-right:8px;
+}
+
+progress{
+    width:100%;
+    height:18px;
+}
+
+/* Buttons */
+
+button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:12px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+    font-size:15px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Logout */
+
+.logout{
+    background:#f59e0b;
+}
+
+.logout:hover{
+    background:#d97706;
+}
+
+/* Delete */
+
+.delete{
+    background:#ef4444;
+}
+
+.delete:hover{
+    background:#dc2626;
+}
+
+.danger{
+    border-left:5px solid #ef4444;
+}
+
+/* ================= Dark Mode ================= */
+
+body.dark{
+    background:#111827;
+    color:white;
+}
+
+body.dark .header,
+body.dark .card{
+    background:#1f2937;
+    color:white;
+}
+
+body.dark .header h1,
+body.dark .card h2{
+    color:white;
+}
+
+body.dark input,
+body.dark select{
+    background:#374151;
+    color:white;
+    border:1px solid #555;
+}
+
+body.dark .profile p{
+    color:#cbd5e1;
+}
+
+body.dark .theme-btn{
+    background:#FFD54F;
+    color:#111827;
+}
+
+body.dark .menu li a:hover,
+body.dark .menu .active a{
+    background:#FFD54F;
+    color:#111827;
+}
+
+/* ================= Responsive ================= */
+
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main-content{
+    margin-left:220px;
+    width:calc(100% - 220px);
+}
+
+}
+
+@media(max-width:768px){
+
+.sidebar{
+    display:none;
+}
+
+.main-content{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+.header{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.header-right{
+    flex-direction:column;
+}
+
+.grid{
+    grid-template-columns:1fr;
+}
+
+}

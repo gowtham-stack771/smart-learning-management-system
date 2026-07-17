@@ -1,0 +1,454 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2563eb,#4f46e5);
+    overflow:hidden;
+}
+
+/* =========================
+   Background Circles
+========================= */
+
+.circle{
+    position:absolute;
+    border-radius:50%;
+    z-index:0;
+}
+
+.circle1{
+    width:350px;
+    height:350px;
+    background:rgba(255,255,255,.15);
+    top:-120px;
+    left:-120px;
+}
+
+.circle2{
+    width:280px;
+    height:280px;
+    background:rgba(255,255,255,.12);
+    bottom:-100px;
+    right:-80px;
+}
+
+/* =========================
+   Main Container
+========================= */
+
+.login-container{
+    width:1000px;
+    max-width:95%;
+    min-height:620px;
+    display:flex;
+    border-radius:25px;
+    overflow:hidden;
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(20px);
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    z-index:1;
+}
+
+/* =========================
+   Left Section
+========================= */
+
+.login-left{
+    flex:1;
+    padding:50px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.login-left h1{
+    font-size:42px;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.login-left p{
+    font-size:16px;
+    line-height:1.8;
+    margin-bottom:35px;
+    max-width:420px;
+}
+
+.login-left img{
+    width:100%;
+    max-width:380px;
+    border-radius:18px;
+    object-fit:cover;
+    box-shadow:0 15px 30px rgba(0,0,0,.2);
+}
+
+/* =========================
+   Right Section
+========================= */
+
+.login-right{
+    flex:1;
+    background:#ffffff;
+    padding:60px 45px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.login-right h2{
+    font-size:34px;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.subtitle{
+    color:#666;
+    margin-bottom:30px;
+}
+
+/* =========================
+   Form
+========================= */
+
+form{
+    width:100%;
+}
+
+.input-box{
+    margin-bottom:22px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-size:15px;
+    color:#333;
+    font-weight:500;
+}
+
+.input-field{
+    display:flex;
+    align-items:center;
+    border:1px solid #dcdcdc;
+    border-radius:12px;
+    padding:14px 16px;
+    transition:.3s;
+}
+
+.input-field:focus-within{
+    border-color:#2563eb;
+    box-shadow:0 0 8px rgba(37,99,235,.25);
+}
+
+.input-field i:first-child{
+    color:#2563eb;
+    margin-right:12px;
+    font-size:17px;
+}
+
+.input-field input{
+    flex:1;
+    border:none;
+    outline:none;
+    font-size:15px;
+    background:transparent;
+}
+
+#togglePassword{
+    cursor:pointer;
+    color:#888;
+}
+
+/* =========================
+   Error Messages
+========================= */
+
+small{
+    display:block;
+    color:#e53935;
+    margin-top:6px;
+    font-size:13px;
+    min-height:18px;
+}
+
+/* =========================
+   Remember / Forgot
+========================= */
+
+.options{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:18px 0 25px;
+    font-size:14px;
+}
+
+.options label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#555;
+}
+
+.options a{
+    text-decoration:none;
+    color:#2563eb;
+    font-weight:500;
+}
+
+.options a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   Login Button
+========================= */
+
+.login-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:25px 0;
+    position:relative;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    flex:1;
+    height:1px;
+    background:#ddd;
+}
+
+.divider span{
+    padding:0 15px;
+    color:#888;
+    font-size:14px;
+    background:#fff;
+}
+
+/* =========================
+   Google Button
+========================= */
+
+.google-btn{
+    width:100%;
+    padding:14px;
+    border:2px solid #e5e7eb;
+    background:#fff;
+    color:#333;
+    border-radius:12px;
+    font-size:15px;
+    font-weight:500;
+    cursor:pointer;
+    transition:.3s;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:10px;
+}
+
+.google-btn:hover{
+    background:#f8fafc;
+    border-color:#2563eb;
+    transform:translateY(-2px);
+}
+
+.google-btn i{
+    color:#ea4335;
+    font-size:18px;
+}
+
+/* =========================
+   Register Link
+========================= */
+
+.register{
+    text-align:center;
+    margin-top:25px;
+    color:#666;
+    font-size:15px;
+}
+
+.register a{
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.register a:hover{
+    text-decoration:underline;
+}
+
+/* =========================
+   Fade Animation
+========================= */
+
+.login-container{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+   Button Hover Animation
+========================= */
+
+.login-btn,
+.google-btn{
+    transition:all .3s ease;
+}
+
+.login-btn:hover,
+.google-btn:hover{
+    box-shadow:0 10px 20px rgba(37,99,235,.2);
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:900px){
+
+    .login-container{
+        flex-direction:column;
+        width:95%;
+        min-height:auto;
+    }
+
+    .login-left{
+        padding:40px 25px;
+    }
+
+    .login-left img{
+        max-width:280px;
+    }
+
+    .login-right{
+        padding:40px 25px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    body{
+        padding:20px;
+    }
+
+    .login-left h1{
+        font-size:32px;
+    }
+
+    .login-right h2{
+        font-size:28px;
+    }
+
+    .options{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:12px;
+    }
+
+    .login-left img{
+        display:none;
+    }
+
+    .circle1{
+        width:220px;
+        height:220px;
+    }
+
+    .circle2{
+        width:180px;
+        height:180px;
+    }
+
+}
+
+/* =========================
+   Dark Mode Ready
+========================= */
+
+body.dark{
+    background:linear-gradient(135deg,#111827,#1f2937);
+}
+
+body.dark .login-right{
+    background:#1f2937;
+}
+
+body.dark .login-right h2,
+body.dark label,
+body.dark .register,
+body.dark .subtitle{
+    color:#fff;
+}
+
+body.dark .input-field{
+    background:#374151;
+    border-color:#4b5563;
+}
+
+body.dark .input-field input{
+    color:#fff;
+}
+
+body.dark .divider span{
+    background:#1f2937;
+    color:#ccc;
+}
+
+body.dark .google-btn{
+    background:#374151;
+    color:#fff;
+    border-color:#4b5563;
+}
+
+body.dark .google-btn:hover{
+    background:#4b5563;
+}
+
+

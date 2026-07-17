@@ -1,0 +1,528 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fc;
+}
+
+.container{
+    display:flex;
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+    width:260px;
+    min-height:100vh;
+    background:#1e293b;
+    padding:30px 20px;
+    position:fixed;
+    left:0;
+    top:0;
+}
+
+.sidebar h2{
+    color:#fff;
+    text-align:center;
+    margin-bottom:40px;
+    font-size:28px;
+}
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:#cbd5e1;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:10px;
+    transition:.3s;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+    background:#2563eb;
+    color:#fff;
+}
+
+.sidebar i{
+    font-size:18px;
+}
+
+/* ===========================
+   MAIN
+=========================== */
+
+.main{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:30px;
+}
+
+/* ===========================
+   TOPBAR
+=========================== */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.topbar h1{
+    color:#111827;
+}
+
+#themeToggle{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:50%;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+#themeToggle:hover{
+    transform:rotate(20deg);
+    background:#1d4ed8;
+}
+
+/* ===========================
+   SUMMARY CARDS
+=========================== */
+
+.summary{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.summary-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.summary-card:hover{
+    transform:translateY(-8px);
+}
+
+.summary-card i{
+    font-size:40px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.summary-card h2{
+    font-size:34px;
+    color:#111827;
+    margin-bottom:10px;
+}
+
+.summary-card p{
+    color:#6b7280;
+}
+
+/* ===========================
+   OVERALL PROGRESS
+=========================== */
+
+.overall{
+    margin-bottom:40px;
+}
+
+.overall h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.overall-card{
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.circle{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    background:conic-gradient(#2563eb 85%, #e5e7eb 0);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:700;
+    color:#2563eb;
+    position:relative;
+}
+
+.circle::before{
+    content:"";
+    position:absolute;
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    background:#fff;
+}
+
+.circle{
+    z-index:1;
+}
+
+.circle::after{
+    content:"85%";
+    position:absolute;
+    font-size:30px;
+    font-weight:bold;
+    color:#2563eb;
+}
+
+.overall-card h3{
+    font-size:28px;
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.overall-card p{
+    color:#6b7280;
+    line-height:1.8;
+}
+/* ===========================
+   COURSE PROGRESS
+=========================== */
+
+.course-progress{
+    margin-bottom:40px;
+}
+
+.course-progress h2{
+    margin-bottom:20px;
+    color:#111827;
+}
+
+.progress-card{
+    background:#fff;
+    padding:25px;
+    border-radius:18px;
+    margin-bottom:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.course-info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:12px;
+}
+
+.course-info h3{
+    color:#111827;
+}
+
+.course-info span{
+    color:#2563eb;
+    font-weight:600;
+}
+
+.progress-bar{
+    width:100%;
+    height:12px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius:20px;
+}
+
+.html{
+    width:75%;
+    background:#2563eb;
+}
+
+.js{
+    width:50%;
+    background:#f59e0b;
+}
+
+.python{
+    width:90%;
+    background:#10b981;
+}
+
+.react{
+    width:30%;
+    background:#ef4444;
+}
+
+/* ===========================
+   WEEKLY ACTIVITY
+=========================== */
+
+.weekly{
+    margin-bottom:40px;
+}
+
+.weekly h2{
+    margin-bottom:20px;
+}
+
+.week-grid{
+    display:grid;
+    grid-template-columns:repeat(7,1fr);
+    gap:15px;
+}
+
+.day{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.day:hover{
+    transform:translateY(-6px);
+}
+
+.day h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.day p{
+    color:#6b7280;
+}
+
+/* ===========================
+   GOALS
+=========================== */
+
+.goals{
+    margin-bottom:40px;
+}
+
+.goals h2{
+    margin-bottom:20px;
+}
+
+.goal-card{
+    background:#fff;
+    padding:25px;
+    border-left:6px solid #2563eb;
+    border-radius:15px;
+    margin-bottom:18px;
+    box-shadow:0 6px 15px rgba(0,0,0,.08);
+}
+
+.goal-card h3{
+    margin-bottom:10px;
+}
+
+.goal-card p{
+    color:#6b7280;
+}
+
+/* ===========================
+   ACHIEVEMENTS
+=========================== */
+
+.achievements{
+    margin-bottom:40px;
+}
+
+.achievements h2{
+    margin-bottom:20px;
+}
+
+.achievement-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.achievement-card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.achievement-card:hover{
+    transform:translateY(-8px);
+}
+
+.achievement-card i{
+    font-size:45px;
+    color:#f59e0b;
+    margin-bottom:15px;
+}
+
+.achievement-card h3{
+    margin-bottom:10px;
+}
+
+.achievement-card p{
+    color:#6b7280;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+.sidebar{
+    width:220px;
+}
+
+.main{
+    margin-left:220px;
+    width:calc(100% - 220px);
+}
+
+.overall-card{
+    flex-direction:column;
+    text-align:center;
+}
+
+.week-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    position:relative;
+    width:100%;
+    min-height:auto;
+}
+
+.main{
+    margin-left:0;
+    width:100%;
+    padding:20px;
+}
+
+.summary{
+    grid-template-columns:1fr;
+}
+
+.week-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.achievement-grid{
+    grid-template-columns:1fr;
+}
+
+.circle{
+    width:140px;
+    height:140px;
+}
+
+.circle::before{
+    width:105px;
+    height:105px;
+}
+
+}
+
+/* ===========================
+   DARK THEME
+=========================== */
+
+.dark{
+    background:#111827;
+}
+
+.dark .main{
+    background:#111827;
+}
+
+.dark .summary-card,
+.dark .overall-card,
+.dark .progress-card,
+.dark .day,
+.dark .goal-card,
+.dark .achievement-card{
+    background:#1f2937;
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+    color:#fff;
+}
+
+.dark p,
+.dark span{
+    color:#cbd5e1;
+}
+
+.dark .circle::before{
+    background:#1f2937;
+}
+
+.dark .progress-bar{
+    background:#374151;
+}
+
+/* ===========================
+   ANIMATION
+=========================== */
+
+.summary-card,
+.progress-card,
+.day,
+.goal-card,
+.achievement-card{
+    transition:.3s;
+}
+
+.summary-card:hover,
+.progress-card:hover,
+.goal-card:hover,
+.achievement-card:hover{
+    transform:translateY(-8px);
+}

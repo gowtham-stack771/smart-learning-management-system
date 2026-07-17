@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Assignment Management</title>
+
+
+<link rel="stylesheet" href="../css file/assignment.css">
+
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+
+<div class="logo">
+
+🎓 Learn Bridge
+
+</div>
+
+
+
+<ul>
+<a href="dashboard.html">
+<i class="fa-solid fa-house"></i> Dashboard
+</a>
+
+<a href="course.html">
+<i class="fa-solid fa-book"></i> My Courses
+</a>
+
+<a href="progress.html" class="active">
+<i class="fa-solid fa-chart-line"></i> Progress
+</a>
+
+<a href="assignment.html">
+<i class="fa-solid fa-file-lines"></i> Assignments
+</a>
+
+<a href="profile.html">
+<i class="fa-solid fa-user"></i> Profile
+</a>
+
+<a href="settings.html">
+<i class="fa-solid fa-gear"></i>
+Settings
+</a>
+
+<a href="login.html">
+<i class="fa-solid fa-right-from-bracket"></i> Logout
+</a>
+
+</ul>
+
+
+</aside>
+
+
+
+
+
+
+
+<!-- MAIN CONTENT -->
+
+
+<main class="main">
+
+
+
+<!-- TOP BAR -->
+ <header class="topbar">
+
+<h1>
+Assignment Management
+</h1>
+
+
+<div class="top-actions">
+
+<button id="themeToggle" class="theme-btn">
+🌙
+</button>
+
+
+<div class="user">
+
+<i class="fa-solid fa-circle-user"></i>
+
+Student
+
+</div>
+
+</div>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- WELCOME CARD -->
+
+
+<section class="welcome-card">
+
+
+<div>
+
+
+<h2>
+Manage Your Assignments
+</h2>
+
+
+<p>
+Track, submit and complete your learning tasks easily.
+</p>
+
+
+</div>
+
+
+<button id="addAssignment">
+
+
+<i class="fa-solid fa-plus"></i>
+
+Add Assignment
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+<!-- STATS -->
+
+
+<section class="stats">
+
+
+
+<div class="stat-card">
+
+
+<i class="fa-solid fa-file-circle-check"></i>
+
+
+<div>
+
+<h3>
+12
+</h3>
+
+
+<p>
+Total Assignment
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="stat-card">
+
+
+<i class="fa-solid fa-clock"></i>
+
+
+<div>
+
+<h3>
+5
+</h3>
+
+
+<p>
+Pending
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<div class="stat-card">
+
+
+<i class="fa-solid fa-check"></i>
+
+
+<div>
+
+<h3>
+7
+</h3>
+
+
+<p>
+Completed
+</p>
+
+
+</div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- SEARCH -->
+
+
+<div class="search-box">
+
+
+<i class="fa-solid fa-search"></i>
+
+
+<input 
+type="text"
+id="searchAssignment"
+placeholder="Search assignment..."
+>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<!-- ASSIGNMENT TABLE -->
+
+
+<section class="assignment-card">
+
+
+<table id="assignmentTable">
+
+
+
+<thead>
+
+
+<tr>
+
+<th>
+Assignment
+</th>
+
+
+<th>
+Subject
+</th>
+
+
+<th>
+Due Date
+</th>
+
+
+<th>
+Status
+</th>
+
+
+<th>
+Action
+</th>
+
+
+</tr>
+
+
+</thead>
+
+
+
+
+
+<tbody>
+
+
+
+<tr>
+
+
+<td>
+Portfolio Website
+</td>
+
+
+<td>
+Web Development
+</td>
+
+
+<td>
+15 July 2026
+</td>
+
+
+<td>
+
+<span class="status pending">
+
+Pending
+
+</span>
+
+</td>
+
+
+
+<td>
+
+
+<button class="view-btn">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+
+<tr>
+
+
+<td>
+Database Project
+</td>
+
+
+<td>
+Database Management
+</td>
+
+
+<td>
+20 July 2026
+</td>
+
+
+<td>
+
+<span class="status completed">
+
+Completed
+
+</span>
+
+</td>
+
+
+
+<td>
+
+
+<button class="view-btn">
+
+<i class="fa-solid fa-eye"></i>
+
+</button>
+
+
+
+
+<button class="delete-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+</main>
+
+
+</div>
+
+
+
+
+
+
+<script src="../java script/dashboard.js"></script>
+
+
+</body>
+
+
+</html>
